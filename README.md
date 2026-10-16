@@ -1,221 +1,132 @@
-# Awesome-AI-Workflow-Frameworks
-
-## Top AI Workflow Frameworks Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Agent Orchestration, Pipeline Composition & Production LLM Applications*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **AI Workflow Frameworks**. These tools provide the scaffolding, abstractions, and orchestration layers developers need to compose multi-step AI workflows—from simple chains to complex multi-agent systems with tool use, memory, and evaluation.
-
-
-
-**Examples** include LangChain, LlamaIndex, Haystack, Semantic Kernel, Flowise, Langflow, AutoGen, CrewAI, Dify, and DSPy (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, workflow orchestration, and open LLM application development—ideal for AI engineers, platform teams, and developers seeking transparent, vendor-independent frameworks.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[LangSmith](https://smith.langchain.com/)**  
-
-  LangChain's observability and evaluation platform with detailed tracing of every LLM call, chain execution, and agent step—showing inputs, outputs, latency, token usage, and cost. **Free Developer plan** (1 seat, 5k base traces/month), **Plus at $39/seat/month** (10k base traces, 1 free serverless deployment), Enterprise with self-hosted/hybrid options.
-
-
-
-- **[LangFlow Cloud](https://www.langflow.org/)**  
-
-  Managed version of the open-source Langflow visual framework. Drag-and-drop LLM workflow builder with API deployment and MCP server support.
-
-
-
-- **[Flowise Cloud](https://flowiseai.com/)**  
-
-  Managed version of the open-source Flowise drag-and-drop LLM app builder. Visual chatbot construction with RAG pipelines and API endpoints.
-
-
-
-- **[Dify Cloud](https://dify.ai/)**  
-
-  Managed version of the open-source Dify LLM app development platform. Features agentic workflows, RAG pipeline, model management, and observability.
-
-
-
-- **[CrewAI Enterprise](https://www.crewai.com/)**  
-
-  Managed version of the open-source CrewAI multi-agent framework. Features deployment, monitoring, and team collaboration for agent crews.
-
-
-
-- **[AutoGen Studio](https://microsoft.github.io/autogen/)**  
-
-  Microsoft's managed interface for the AutoGen multi-agent framework. Visual agent composition and conversation orchestration.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[LangChain](https://github.com/langchain-ai/langchain)**  
-
-  **The most widely adopted framework for building LLM applications** (MIT). **`create_agent` provides a minimal, highly configurable agent harness**—compose exactly the agent your use case needs from model, tools, prompt, and middleware. Supports OpenAI, Anthropic, Google, OpenRouter, Fireworks, Baseten, and Ollama. **LangSmith for tracing, debugging, and evaluation**. **The de facto standard for LLM application development.**
-
-
-
-- **[LlamaIndex](https://github.com/run-llama/llama_index)**  
-
-  **The leading data framework for LLM applications** (MIT). Specializes in **RAG pipelines, document indexing, and retrieval**. Features data connectors, indexes, query engines, and agents. **The best choice when your primary need is connecting LLMs to private data.**
-
-
-
-- **[Haystack (deepset)](https://github.com/deepset-ai/haystack)**  
-
-  **Production-ready NLP framework** (Apache-2.0). Features **typed pipelines** for RAG, question answering, and semantic search. **Strong enterprise focus** with component-based architecture and extensive evaluation tools. **Recommended for production-grade typed RAG pipelines.**
-
-
-
-- **[Griptape](https://github.com/griptape-ai/griptape)**  
-
-  **The Python framework for AI workflows and pipelines with chain of thought reasoning, external tools, and memory** (Apache-2.0) . **The most modular and composable open-source workflow framework.** **Five core primitives**: **Agents** (LLMs + Tools + Tasks), **Pipelines** (sequential/parallel task orchestration), **Workflows** (DAG-based execution with custom control flow), **Tasks** (discrete units of work), and **Tools** (Python functions callable by LLMs) . **Key innovation**: **Structures** can run as a library or **deployed as scalable API endpoints**—built-in FastAPI-based API server with Swagger docs for serving workflows over HTTP . **Supports OpenAI, Anthropic, Cohere, Hugging Face, Ollama, LM Studio, and Amazon Bedrock** . **Drivers architecture** for different prompt formats (Anthropic, Cohere, Gemini, Groq, SageMaker) . **The best choice when you want typed, composable Python workflows with built-in API deployment.**
-
-
-
-- **[Semantic Kernel (Microsoft)](https://github.com/microsoft/semantic-kernel)**  
-
-  **Microsoft's LLM orchestration SDK** (MIT). Features planners, plugins, memories, and connectors for C#, Python, and Java. **Deep integration with Azure OpenAI and Microsoft ecosystem.** The foundation for Microsoft Copilot extensibility.
-
-
-
-- **[AutoGen (Microsoft)](https://github.com/microsoft/autogen)**  
-
-  **Multi-agent conversation framework** (MIT). **The most mature open-source multi-agent orchestration**—agents converse, execute code, and collaborate to solve tasks. Features group chat, nested chats, and human-in-the-loop. **50,000+ GitHub stars.**
-
-
-
-- **[CrewAI](https://github.com/crewAIInc/crewAI)**  
-
-  **Role-based multi-agent collaboration framework** (MIT). **The most accessible multi-agent framework**—define agents with roles, goals, and backstories, then compose crews with sequential or hierarchical processes. Features tools, memory, and delegation. **40,000+ GitHub stars.**
-
-
-
-- **[Dify](https://github.com/langgenius/dify)**  
-
-  **Open-source LLM app development platform** (Apache-2.0 with conditions). **157,000+ GitHub stars.** Features **agentic workflows**, **RAG pipeline**, **model management**, and **observability**. Visual workflow builder with API deployment. **The most complete open-source alternative to commercial LLMOps platforms.**
-
-
-
-- **[DSPy (Stanford)](https://github.com/stanfordnlp/dspy)**  
-
-  **Framework for programming—not prompting—LLMs** (MIT). **The most academically rigorous approach to LLM optimization**—separate specification from implementation, then let DSPy compile optimal prompts and weights. Features modules, signatures, and optimizers. **Used in production at Databricks and other enterprises.**
-
-
-
-- **[Flowise](https://github.com/FlowiseAI/Flowise)**  
-
-  **Drag-and-drop LLM app builder** (Apache-2.0). **30,000+ GitHub stars.** Visual chatbot construction with RAG pipelines, API endpoints, and multi-model support. **The most accessible no-code LLM application builder.**
-
-
-
-- **[Langflow](https://github.com/langflow-ai/langflow)**  
-
-  **Visual framework for building multi-agent and RAG applications** (MIT). **100,000+ GitHub stars.** Drag-and-drop LLM workflow builder with API deployment and MCP server support. **The most widely adopted visual LLM development tool.**
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[Vercel AI SDK](https://github.com/vercel/ai)** — TypeScript toolkit for building AI applications with multi-provider support (OpenAI, Anthropic, Google, Mistral, Llama). **The standard for building custom AI interfaces in Next.js and React.**
-
-- **[Pydantic AI](https://github.com/pydantic/pydantic-ai)** — Agent framework from the Pydantic team. **Type-safe agent development** with structured outputs and dependency injection.
-
-- **[Agno (formerly Phidata)](https://github.com/agno-agi/agno)** — Full-stack framework for building multi-modal agents with memory, knowledge, and tools. **Lightweight and performant** with 10,000+ GitHub stars.
-
-- **[Smolagents (Hugging Face)](https://github.com/huggingface/smolagents)** — Minimal agent framework that writes Python code to call tools. **The simplest approach to code-writing agents** from Hugging Face.
-
-- **[Swarm (OpenAI)](https://github.com/openai/swarm)** — Lightweight multi-agent orchestration from OpenAI. **Educational and experimental**—demonstrates handoffs and routines.
-
-- **[Letta (formerly MemGPT)](https://github.com/letta-ai/letta)** — Stateful agents with long-term memory. **The most sophisticated open-source memory architecture for agents.**
-
-- **[MetaGPT](https://github.com/geekan/MetaGPT)** — Multi-agent framework that assigns software company roles (PM, architect, engineer). **The most structured approach to multi-agent software development.**
-
-- **[n8n](https://github.com/n8n-io/n8n)** — Open-source workflow automation with AI capabilities (Sustainable Use License). **400+ integrations, LangChain nodes, and custom code execution.**
-
-- Community **n8n** workflows for AI workflow orchestration and agent deployment automation.
-
-
-
-**Frameworks for building custom systems**: Combine **Griptape** for typed Python workflows with built-in API deployment, **LangChain** for agent orchestration, **LlamaIndex** for RAG pipelines, **CrewAI** or **AutoGen** for multi-agent collaboration, **Dify** for visual workflow building, and **DSPy** for prompt optimization—creating a comprehensive AI workflow stack.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- AI workflow frameworks handling LLM applications must comply with data protection regulations (GDPR, CCPA, etc.) and model provider terms of service.
-
-- **Framework selection depends on primary use case.** Griptape for typed Python workflows with built-in API deployment, LangChain for general agent orchestration, LlamaIndex for RAG and data indexing, CrewAI for accessible multi-agent collaboration, AutoGen for mature multi-agent conversation, Dify for visual development, DSPy for prompt optimization. **No single framework dominates across all use cases.**
-
-- **Griptape's deployment story is the differentiator.** Structures can run as a library or **deployed as scalable API endpoints** with FastAPI, Swagger docs, and optional hosted cloud—**most workflow frameworks require you to build the API layer yourself** .
-
-- **Self-hosted open-source solutions require proper security hardening, LLM infrastructure (or API keys), and ongoing maintenance.** AI workflow frameworks evolve rapidly—pin versions and test upgrades before production deployment.
-
-
+<div align="center">
+
+<img src="./assets/banner.svg" alt="Awesome AI Workflow Frameworks Banner" width="100%" />
+
+# ⚡ Awesome AI Workflow Frameworks 🤖
+
+### 🌟 Production LLM Application Architecture, Agent Orchestration & Pipeline Composition Ecosystem 🚀
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-AI-Workflow-Frameworks/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Workflow-Frameworks?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-AI-Workflow-Frameworks/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-AI-Workflow-Frameworks?style=social" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-AI-Workflow-Frameworks/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-AI-Workflow-Frameworks?color=green" alt="Issues" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-AI-Workflow-Frameworks/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+<p align="center">
+  <b>A curated list of leading Enterprise SaaS platforms, Developer Tools, and Open-Source GitHub Projects for orchestrating AI agents, building Retrieval-Augmented Generation (RAG) pipelines, and deploying production-grade LLM applications.</b>
+</p>
 
 ---
 
+</div>
 
+## 📑 Table of Contents
+- [📌 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+- [💻 Open-Source GitHub Frameworks](#-open-source-github-frameworks)
+- [📈 Star History](#-star-history)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⚠️ Disclaimer](#️-disclaimer)
 
-**Made for AI engineers, platform teams, and developers building transparent AI workflow solutions.**  
+---
 
-Let's make AI Workflow Frameworks more open, data-driven, and production-ready.
+## 📌 Sector Overview & Market Dynamics
+
+The global AI workflow and agent orchestration market was estimated between **$8.7B and $13.9B in 2025**, projected to reach **$11.7B to $13.7B in 2026** and surge past **$28B–$30B+ by 2030** at an accelerated CAGR of **22.3% to 35%+**. 
+
+The sector remains **highly fragmented** rather than a winner-take-all monopoly, marked by fierce convergence among hyperscalers (Microsoft Copilot Studio, Google Cloud, AWS), enterprise workflow giants (ServiceNow, Workday), and open-source foundation ecosystems (LangChain, AutoGen, CrewAI, Dify). Emerging standards around agent memory, multi-agent protocols, and durable DAG execution continue to keep the landscape modular and distributed.
+
+---
+
+## ☁️ SaaS & Hosted Platforms
+
+A quantitative breakdown of commercial, hosted, and enterprise AI workflow orchestration platforms, ordered by company scale and capitalization.
+
+| Company / Product | Company Scale (Revenue / Valuation) | Starting Tier Pricing | Free Tier / Trial Limits | Core Capabilities & Focus |
+| :--- | :--- | :--- | :--- | :--- |
+| **[AutoGen Studio (Microsoft)](https://microsoft.github.io/autogen/)** | **~$3.1T Market Cap** (Microsoft) / $245B+ ARR | **Included with Azure consumption** (Azure OpenAI usage rates apply) | **$200 free credit** (30-day Azure Free Trial) | Microsoft's enterprise multi-agent suite. Graphical interface for prototyping, testing, and monitoring multi-agent conversational teams. |
+| **[LangFlow Cloud (DataStax)](https://www.langflow.org/)** | **~$1.6B Valuation** (DataStax acquired by IBM/Private Equity) | **Pay-As-You-Go** starting at **$0.37 / million read units** (Astra DB backend) | **$25/month free recurring credit** (covers up to 5 serverless databases & millions of operations) | Visual drag-and-drop IDE for building multi-agent workflows, tool routing, and RAG pipelines with integrated vector databases. |
+| **[LangSmith (LangChain Inc.)](https://smith.langchain.com/)** | **$1.25B Valuation** (Series B unicorn) / ~$15M ARR | **$39 / seat / month** (Plus Plan) | **Free forever Developer plan**: 1 user seat, 5,000 base traces/month (14-day retention), and debugging playground | Category-defining LLM observability, agent tracing, dataset management, prompt iteration, and automated evaluations. |
+| **[Dify Cloud (LangGenius)](https://dify.ai/)** | **$180M Valuation** (Series Pre-A) / ~$4M ARR | **$59 / workspace / month** (Professional Plan) | **Free forever Sandbox plan**: 1 workspace, 1 user, 200 platform message credits, 5 apps, 50 docs (50 MB storage) | Turnkey LLMOps platform featuring visual agentic workflow orchestration, document RAG, and multi-model deployment. |
+| **[CrewAI Enterprise](https://www.crewai.com/)** | **$50M–$100M Valuation** / ~$3M ARR | **$99 / month** (AWS Marketplace self-serve Starter) | **Free forever Hosted Plan**: 1 user, 50 workflow executions/month, visual workflow builder & GitHub sync | Role-based autonomous agent orchestration platform with multi-agent delegation, production tracing, and team collaboration. |
+| **[Flowise Cloud](https://flowiseai.com/)** | **Acquired by Workday** / ~$1M ARR | **$35 / month** (Starter Plan) | **Free forever plan**: 2 flows & assistants, 100 predictions/month, 5 MB storage, and community support | Low-code/no-code drag-and-drop interface for composing LangChain components, agent swarms, and conversational chatbots. |
+
+---
+
+## 💻 Open-Source GitHub Frameworks
+
+The definitive open-source AI workflow frameworks, agent runtimes, and pipeline composition libraries, ranked by community adoption (**descending GitHub Stars**).
+
+| Repository & Framework | Community Stars | License | Core Strengths & Architectural Specialty |
+| :--- | :---: | :---: | :--- |
+| **[n8n](https://github.com/n8n-io/n8n)** | [![n8n Stars](https://img.shields.io/github/stars/n8n-io/n8n?style=social&color=white)](https://github.com/n8n-io/n8n/stargazers) | Sustainable Use License | Enterprise workflow automation platform with native AI nodes, LangChain connectors, vector memory, and 400+ SaaS integrations. |
+| **[AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)** | [![AutoGPT Stars](https://img.shields.io/github/stars/Significant-Gravitas/AutoGPT?style=social&color=white)](https://github.com/Significant-Gravitas/AutoGPT/stargazers) | MIT | The pioneering autonomous agent harness capable of breaking complex goals into multi-step actions, tool calls, and continuous self-correction. |
+| **[Dify](https://github.com/langgenius/dify)** | [![Dify Stars](https://img.shields.io/github/stars/langgenius/dify?style=social&color=white)](https://github.com/langgenius/dify/stargazers) | Apache-2.0 w/ cond. | Complete open-source LLM application platform featuring visual DAG workflow builders, prompt engineering studios, and multi-tenant RAG pipelines. |
+| **[Langflow](https://github.com/langflow-ai/langflow)** | [![Langflow Stars](https://img.shields.io/github/stars/langflow-ai/langflow?style=social&color=white)](https://github.com/langflow-ai/langflow/stargazers) | MIT | Highly visual, modular drag-and-drop framework for architecting multi-agent ecosystems, custom tools, and RAG retrieval networks. |
+| **[LangChain](https://github.com/langchain-ai/langchain)** | [![LangChain Stars](https://img.shields.io/github/stars/langchain-ai/langchain?style=social&color=white)](https://github.com/langchain-ai/langchain/stargazers) | MIT | Industry-standard developer harness and ecosystem. Provides standard abstractions, chains, LangGraph durable agent state graphs, and tool bindings. |
+| **[browser-use](https://github.com/browser-use/browser-use)** | [![browser-use Stars](https://img.shields.io/github/stars/browser-use/browser-use?style=social&color=white)](https://github.com/browser-use/browser-use/stargazers) | MIT | Autonomous agent framework designed specifically for browser automation, web interaction, scraping, and human-like web actions. |
+| **[RAGFlow](https://github.com/infiniflow/ragflow)** | [![RAGFlow Stars](https://img.shields.io/github/stars/infiniflow/ragflow?style=social&color=white)](https://github.com/infiniflow/ragflow/stargazers) | Apache-2.0 | Next-generation open-source RAG engine based on deep document understanding and multi-agent workflow orchestration. |
+| **[MetaGPT](https://github.com/geekan/MetaGPT)** | [![MetaGPT Stars](https://img.shields.io/github/stars/geekan/MetaGPT?style=social&color=white)](https://github.com/geekan/MetaGPT/stargazers) | MIT | Multi-agent collaboration framework that simulates complete software teams (Product Managers, Architects, Project Managers, Engineers) with structured SOPs. |
+| **[AutoGen](https://github.com/microsoft/autogen)** | [![AutoGen Stars](https://img.shields.io/github/stars/microsoft/autogen?style=social&color=white)](https://github.com/microsoft/autogen/stargazers) | MIT | Microsoft's multi-agent conversational framework enabling cooperative autonomous agents, human-in-the-loop validation, and dynamic tool orchestration. |
+| **[CrewAI](https://github.com/crewAIInc/crewAI)** | [![CrewAI Stars](https://img.shields.io/github/stars/crewAIInc/crewAI?style=social&color=white)](https://github.com/crewAIInc/crewAI/stargazers) | MIT | Ergonomic, role-based multi-agent orchestration framework. Define agents with dedicated backstories, goals, tools, and execution processes. |
+| **[Flowise](https://github.com/FlowiseAI/Flowise)** | [![Flowise Stars](https://img.shields.io/github/stars/FlowiseAI/Flowise?style=social&color=white)](https://github.com/FlowiseAI/Flowise/stargazers) | Apache-2.0 | Accessible UI/visual graph canvas for assembling LangChain components, agent tool callers, and conversational bots. |
+| **[LlamaIndex](https://github.com/run-llama/llama_index)** | [![LlamaIndex Stars](https://img.shields.io/github/stars/run-llama/llama_index?style=social&color=white)](https://github.com/run-llama/llama_index/stargazers) | MIT | The premier data framework for connecting external data sources, indexing knowledge bases, and executing contextual retrieval workflows. |
+| **[Agno](https://github.com/agno-agi/agno)** | [![Agno Stars](https://img.shields.io/github/stars/agno-agi/agno?style=social&color=white)](https://github.com/agno-agi/agno/stargazers) | Apache-2.0 | Ultra-fast, lightweight full-stack framework (formerly Phidata) for building multi-modal autonomous agents with memory and knowledge integration. |
+| **[DSPy](https://github.com/stanfordnlp/dspy)** | [![DSPy Stars](https://img.shields.io/github/stars/stanfordnlp/dspy?style=social&color=white)](https://github.com/stanfordnlp/dspy/stargazers) | MIT | Stanford framework for programmatically optimizing and compiling LM prompts and weights using algorithmic teleprompters rather than manual prompting. |
+| **[smolagents](https://github.com/huggingface/smolagents)** | [![smolagents Stars](https://img.shields.io/github/stars/huggingface/smolagents?style=social&color=white)](https://github.com/huggingface/smolagents/stargazers) | Apache-2.0 | Hugging Face's minimalist library where agents execute actions via raw Python code blocks instead of JSON tool formats. |
+| **[Semantic Kernel](https://github.com/microsoft/semantic-kernel)** | [![Semantic Kernel Stars](https://img.shields.io/github/stars/microsoft/semantic-kernel?style=social&color=white)](https://github.com/microsoft/semantic-kernel/stargazers) | MIT | Enterprise-grade SDK from Microsoft supporting C#, Python, and Java for fusing AI plugins, planners, memory, and copilot infrastructure. |
+| **[Vercel AI SDK](https://github.com/vercel/ai)** | [![Vercel AI SDK Stars](https://img.shields.io/github/stars/vercel/ai?style=social&color=white)](https://github.com/vercel/ai/stargazers) | Apache-2.0 | TypeScript/JavaScript standard library for building streaming AI chat, generative UI, and agent workflows across web frameworks. |
+| **[Haystack](https://github.com/deepset-ai/haystack)** | [![Haystack Stars](https://img.shields.io/github/stars/deepset-ai/haystack?style=social&color=white)](https://github.com/deepset-ai/haystack/stargazers) | Apache-2.0 | Production NLP orchestration framework by deepset featuring strongly-typed DAG pipelines, state-of-the-art retrieval, and evaluation metrics. |
+| **[Letta](https://github.com/letta-ai/letta)** | [![Letta Stars](https://img.shields.io/github/stars/letta-ai/letta?style=social&color=white)](https://github.com/letta-ai/letta/stargazers) | Apache-2.0 | Stateful LLM architecture (formerly MemGPT) that manages self-editing hierarchical memory systems across unlimited conversational sessions. |
+| **[Swarm](https://github.com/openai/swarm)** | [![Swarm Stars](https://img.shields.io/github/stars/openai/swarm?style=social&color=white)](https://github.com/openai/swarm/stargazers) | MIT | Educational, lightweight multi-agent orchestration pattern from OpenAI emphasizing handoffs and routine execution primitives. |
+| **[Pydantic AI](https://github.com/pydantic/pydantic-ai)** | [![Pydantic AI Stars](https://img.shields.io/github/stars/pydantic/pydantic-ai?style=social&color=white)](https://github.com/pydantic/pydantic-ai/stargazers) | MIT | Type-safe agent framework created by the Pydantic team, bringing validation, structured streaming, and dependency injection to LLM agents. |
+| **[CAMEL](https://github.com/camel-ai/camel)** | [![CAMEL Stars](https://img.shields.io/github/stars/camel-ai/camel?style=social&color=white)](https://github.com/camel-ai/camel/stargazers) | Apache-2.0 | Communicative Agent Framework studying cooperative "mind" exploration, automated role-playing, and scalable autonomous social simulations. |
+| **[Griptape](https://github.com/griptape-ai/griptape)** | [![Griptape Stars](https://img.shields.io/github/stars/griptape-ai/griptape?style=social&color=white)](https://github.com/griptape-ai/griptape/stargazers) | Apache-2.0 | Python framework for composable, typed DAG workflows and pipelines with off-the-shelf FastAPI deployment and cloud hosting drivers. |
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-AI-Workflow-Frameworks&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta0007/Awesome-AI-Workflow-Frameworks&type=date&legend=top-left)
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome! If you know an outstanding AI workflow framework or orchestration tool that should be included:
+
+1. 🍴 **Fork** this repository.
+2. 🌿 **Create a new branch** (`git checkout -b add-my-framework`).
+3. 📝 **Add your entry** adhering to the existing tabular format (include link, license, and precise capability breakdown).
+4. 🚀 **Commit your changes** (`git commit -m "feat: add FrameworkName"`).
+5. 📤 **Push to branch** (`git push origin add-my-framework`).
+6. 🎯 **Open a Pull Request** with a brief summary of why it belongs here.
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this curated ecosystem directory helpful for your AI architecture, team, or projects, please consider supporting the project:
+
+- ⭐ **Star this repository** on GitHub to increase visibility!
+- 🍴 **Fork & Share** with fellow AI engineers and builders.
+- ☕ **Buy me a coffee / Sponsor**: Show your support via [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## ⚠️ Disclaimer
+
+- This repository is a **community-curated index** provided for informational and educational purposes; listing does not constitute an explicit commercial endorsement.
+- All trademarks, logos, and brand names belong to their respective owners.
+- When deploying AI workflow and agent frameworks in enterprise production, verify compliance with data privacy regulations (GDPR, CCPA, HIPAA), safety guardrails, and model provider service terms.
+
+---
+
+<div align="center">
+  <sub>Maintained with ❤️ by <a href="https://github.com/ishandutta2007">Ishan Dutta</a> and the global open-source community.</sub>
+</div>
